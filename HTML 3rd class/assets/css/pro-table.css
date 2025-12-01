@@ -1,0 +1,9 @@
+table, tr, th, td {
+    border: 1px solid rgba(4, 59, 85, 0.897); 
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+td{
+    color: #84253a;
+}
