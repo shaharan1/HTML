@@ -1,0 +1,49 @@
+.myHeader{
+    background-color: rgb(48, 95, 95);
+    width: 100%;
+    height: auto;
+}
+
+
+#myNav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#myNav ul, #myNav li{
+    list-style: none;
+    float: left;
+    margin: 5px 10px 5px 10px;
+}
+#myNav a {
+    text-decoration: none;
+    color: brown;
+    font-weight: 700;
+}
+#myNav a:hover{
+    background-color: rgb(161, 58, 58);
+    color: rebeccapurple;
+}
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 10px;
+    height: 5  px;
+}
+
+/* #myNav ul,
+#myNav li {
+    list-style: none;
+    float: left;
+    margin: 5px 10px 5px 10px;
+}
+#myNav a {
+    text-decoration: none;
+    color: brown;
+    font-weight: 700;
+}
+#myNav a:hover{
+    background-color: rgb(161, 58, 58);
+    color: rebeccapurple;
+} */
