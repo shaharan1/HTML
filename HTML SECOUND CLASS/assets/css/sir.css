@@ -1,0 +1,93 @@
+#homeHeader {
+    background-color: tomato;
+    width: 100%;
+    height: auto;
+}
+
+#myNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin: 5px 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: rebeccapurple;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Hamburger button hidden on desktop */
+.hamburger {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#visionTable,
+#visionTable tr,
+#visionTable td {
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+
+.contactTable {
+    width: 100%;
+}
+
+.contactTable,
+.contactTable tr,
+.contactTable td {
+    border: 1px solid rgb(239, 251, 1);
+    border-collapse: collapse;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: tomato;
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #myNav {
+        flex-direction: row;
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
