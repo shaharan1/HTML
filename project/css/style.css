@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-btn {
+    font-size: medium;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    padding: 3px 8px;
+    border-radius: 50px;
+    line-height: 8px;
+    display: inline-block;
+    transition: all 0.3s ease-out 0s;
+}
