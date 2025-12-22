@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = [12, 95, 85, 14, 13, 80, 70, 150, 230, 512 ,580, 645, 10 ];
+      let max = 0;
+      let min = 99999;
+
+      for (let shaharan = 0; shaharan < number.length; shaharan++) {
+        if (max <= number[shaharan]) {
+          max = number[shaharan];
+        }
+      }
+
+      for (let shaharan = 0; shaharan < number.length; shaharan++) {
+        if (min >= number[shaharan]) {
+          min = number[shaharan];
+        }
+      }
+
+      document.writeln("The Max Number is "+ max +"<br><br>");
+      document.writeln("The Min Number is "+ min);
+    </script>
+  </body>
+</html>
