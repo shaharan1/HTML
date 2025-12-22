@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD-ARRAY</title>
+</head>
+<body>
+    <script>
+        let arraySize=prompt("Enter Array Size");
+        let arrayStore=[];
+        let sum=0;
+        let text="";
+
+        for(let index =0;index <arraySize; index++){
+
+let arrayItem=prompt("Enter Item");
+
+arrayStore[index]=arrayItem;
+
+        }
+        document.writeln(arrayStore + "<br><br>");
+
+        for(let index=0;index<arrayStore.length;index++){
+
+sum = sum + Number.parseInt(arrayStore[index]);
+
+text=text + arrayStore[index] + "+" ;
+
+        }
+        let newText = text.substring(0, text.length-1);
+        document.writeln(newText + " = "+ sum);
+        </script>
+</body>
+</html>
