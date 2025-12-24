@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let price=prompt("Enter Rate");
+        let quentity=prompt("Enter Quentity");
+        let diccount = prompt("Enter Diccount");
+        let totalPrice=price*quentity;
+        let diccountAmount=0;
+        let accualPrice=0;
+
+    
+
+        if(totalPrice>=50){
+             diccountAmount=totalPrice*diccount/100;
+             accualPrice=totalPrice-diccountAmount;
+
+        }
+document.writeln(accualPrice);
+       
+    </script>
+</body>
+</html>
