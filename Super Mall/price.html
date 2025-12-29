@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="">Amount:</label>
+      <input type="text" id="amount" oninput="totalPrice()" /> <br /><br />
+
+      <label for="">Discount(%):</label>
+      <input type="text" id="discount" readonly /><br /><br />
+
+      <label for="">Discount Amount: </label>
+      <input type="text" id="disAmount" readonly /><br /><br />
+
+      <label for="">Final Payment:</label>
+      <input type="text" id="finalAmount" readonly /><br /><br />
+    </form>
+
+    <script>
+      function totalPrice() {
+        let am = document.getElementById("amount").value;
+
+        let disAm = 0;
+        let payment = am;
+        let x = 0;
+
+        if (am >= 100 && am <= 300) {
+          disAmt = am * (10 / 100);
+          payment = am - disAm;
+          x = "10%";
+        } else if (am <= 700) {
+          disAm = am * (15 / 100);
+          payment = am - disAm;
+          x = "15%";
+        } else if (am <= 1000) {
+          disAm = am * (20 / 100);
+          payment = am - disAm;
+          x = "20%";
+        } else {
+          disAm = am * (25 / 100);
+          payment = am - disAm;
+          x = "25%";
+        }
+
+        document.getElementById("discount").value = x;
+        document.getElementById("disAmount").value = disAm;
+        document.getElementById("finalAmount").value = payment;
+      }
+    </script>
+  </body>
+</html>
