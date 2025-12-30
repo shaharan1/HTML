@@ -20,8 +20,7 @@
 
 }
 
-/* rooms */
-/* .carousel-item {
+rooms .carousel-item {
     transition: transform 0.8s ease-in-out;
 }
 
@@ -38,4 +37,10 @@
 .carousel-item-prev,
 .active.carousel-item-end {
     transform: translateY(-100%);
-} */
+}
+
+ul,
+li {
+
+    list-style: none;
+}
